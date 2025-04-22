@@ -16,7 +16,7 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <img src="les_copains_dabord.png" alt="Les Copains d'Abord" id="logo">
+                <h1 class="site-title">LES COPAINS D'ABORD</h1>
             </div>
             
             <div class="menu-toggle">
@@ -37,13 +37,8 @@
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <div class="glitch-container">
-                    <h1 class="glitch-text" data-text="LES COPAINS D'ABORD">LES COPAINS D'ABORD</h1>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="animated-circle"></div>
+            <div class="hero-3d">
+                <canvas id="hero-canvas"></canvas>
             </div>
         </section>
 
@@ -52,7 +47,14 @@
                 <h2 class="section-title">Prochain Événement</h2>
                 <div class="underline"></div>
             </div>
-            
+
+            <div class="event-video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="event-fresque/Dark Rave - Flkn & Lexledu.webm" type="video/webm">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+            </div>
+
             <div class="event-card">
                 <div class="event-header">
                     <div class="event-date-block">
@@ -371,5 +373,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
 </body>
 </html>
